@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+
+<div class="pb4 pt4">
+  {{ range .Params.testimonials }}
+    {{ partial "blockquote" . }}
+  {{ end }}
+</div>
+
+{{ end }}
