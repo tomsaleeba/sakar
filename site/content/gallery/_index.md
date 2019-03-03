@@ -1,6 +1,6 @@
 ---
 title: "Gallery of previous work"
-image: /img/about-jumbotron.jpg
+image: /img/gallery-jumbotron.jpg
 values:
   - heading: "Some extension"
     text: >

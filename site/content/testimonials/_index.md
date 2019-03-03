@@ -1,7 +1,7 @@
 ---
 title: Testimonials
 type: products
-image: /img/products-jumbotron.jpg
+image: /img/testimonials-jumbotron.jpg
 testimonials:
   - author: Jules and Janet - Marino in 2016
     quote: >-

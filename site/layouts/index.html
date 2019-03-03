@@ -4,8 +4,33 @@
 
 {{ partial "short-text" .Params.blurb}}
 
-{{ partial "2-up" .Params }}
+<div class="pv4">
+  <div class="flex-l mhn1-l ph3 center mw7">
+    <div class="w-60-l mb0">
+      <ul class="services-list">
+        <li>First and Second Fix Carpentry</li>
+        <li>Architectural Cladding</li>
+        <li>Renovations and Extensions</li>
+        <li>Facilities Management and Maintenance</li>
+        <li>Commercial Carpentry</li>
+        <li>Office Fit Out</li>
+        <li>Outdoor Living Solutions</li>
+      </ul>
+    </div>
+    <h2 class="f2 b lh-title mb2 w-40-l">Our services</h2>
+  </div>
+</div>
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+<div class="bg-grey-1">
+  <div class="mw7 center ph3 pt4">
+    {{ range $index, $element := .Params.values }}
+      {{ if modBool $index 2 }}
+        {{ partial "media-block" $element }}
+      {{ else }}
+        {{ partial "media-block-reverse" $element }}
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
 
 {{ end }}
