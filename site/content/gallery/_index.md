@@ -1,6 +1,6 @@
 ---
 title: Gallery of previous work
-image: /img/gallery-jumbotron.jpg
+image: /img/2gx0fmm0.jpeg
 values:
   - heading: Some extension
     imageUrl: /img/job1.jpeg
